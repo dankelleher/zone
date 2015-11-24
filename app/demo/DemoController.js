@@ -1,3 +1,5 @@
+angular.module('zone').value('PATH', 'components/');
+
 angular.module('zone').controller('DemoController',
     ['ZoneService',
         function (ZoneService) {

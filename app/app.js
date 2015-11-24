@@ -1,3 +1,4 @@
 'use strict';
 
-angular.module('zone', ['ngAnimate']);
+angular.module('zone', ['ngAnimate'])
+    .value('PATH', '');
