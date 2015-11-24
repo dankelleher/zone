@@ -1,0 +1,25 @@
+.animate-notification {
+    line-height:40px;
+    list-style:none;
+    box-sizing:border-box;
+}
+
+.animate-notification.ng-move,
+.animate-notification.ng-enter,
+.animate-notification.ng-leave {
+    transition:all linear 0.5s;
+}
+
+.animate-notification.ng-leave.ng-leave-active,
+.animate-notification.ng-move,
+.animate-notification.ng-enter {
+    opacity:0;
+    max-height:0;
+}
+
+.animate-notification.ng-leave,
+.animate-notification.ng-move.ng-move-active,
+.animate-notification.ng-enter.ng-enter-active {
+    opacity:1;
+    max-height:40px;
+}

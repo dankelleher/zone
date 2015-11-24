@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="zone">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Zone Demo</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="demo/animations.css">
+  <link rel="stylesheet" href="demo/demo.css">
+</head>
+<body ng-controller="DemoController as ctrl">
+  
+  <ui-zone></ui-zone>
+  
+  <form ng-submit="ctrl.addNotification()">
+    Enter text and hit enter:
+    <input type="text" ng-model="ctrl.newNotification.text"/>
+    <input type="submit" id="submit" value="Submit" />
+  </form>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="app.js"></script>
+  <script src="components/zone/ZoneDirective.js"></script>
+  <script src="components/zone/ZoneService.js"></script>
+
+  <script src="demo/DemoController.js"></script>
+</body>
+</html>

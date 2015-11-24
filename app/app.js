@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('zone', []);
+angular.module('zone', ['ngAnimate']);

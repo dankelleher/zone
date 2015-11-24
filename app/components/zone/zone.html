@@ -1,0 +1,18 @@
+<div class="zone-container">
+    <div class="zone-content">
+        <div ng-repeat="notification in notifications" class="animate-notification">
+            <div class="notification-container">
+                <div class="notification-content" ng-include="templateSrc(notification)"></div>
+                <div class="notification-closer">
+                    <img src="resources/images/close.svg" width="24px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zone-control">
+        <button class="zone-expander" ng-click="toggle()">
+            <span class="up-arrow" ng-show="state.expanded"></span>
+            <span class="down-arrow" ng-show="!state.expanded"></span>
+        </button>
+    </div>
+</div>

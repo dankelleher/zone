@@ -1,5 +1,56 @@
 /* zone css stylesheet */
 
 .zone-container {
-  
+    border: lightgray 1px ridge;
+}
+
+.zone-expander {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+}
+
+.zone-expander span {
+    padding: 5px 5px 5px 5px;
+}
+
+.up-arrow {
+    background:url(data:image/gif;base64,R0lGODlhCwALAJEAAAAAAP///xUVFf///yH5BAEAAAMALAAAAAALAAsAAAIRnC2nKLnT4or00Puy3rx7VQAAOw==) no-repeat center right !important;
+}
+.down-arrow {
+    background:url(data:image/gif;base64,R0lGODlhCwALAJEAAAAAAP///xUVFf///yH5BAEAAAMALAAAAAALAAsAAAIPnI+py+0/hJzz0IruwjsVADs=) no-repeat center right !important;
+}
+
+.notification-container {
+    overflow: auto;
+    width: 100%
+}
+
+.notification-content {
+    float: left;
+    width: 80%;
+}
+
+.notification-closer {
+    float: right;
+    width: 20%;
+}
+
+.notification-show-hide {
+    padding:10px;
+    border:1px solid black;
+}
+
+.notification-show-hide.ng-enter.ng-enter-active {
+    opacity:1;
+}
+
+.notification-show-hide.ng-enter {
+    -webkit-transition:0.5s linear all;
+    -moz-transition:0.5s linear all;
+    -o-transition:0.5s linear all;
+    transition:0.5s linear all;
+    opacity:0;
 }

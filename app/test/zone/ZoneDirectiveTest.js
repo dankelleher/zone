@@ -2,13 +2,22 @@
 
 describe('zone module', function() {
     beforeEach(module('zone'));
+    beforeEach(module('templates'));
 
     describe('Zone directive', function() {
-        it('should do nothing yet', function() {
-            inject(function($compile, $rootScope) {
-                var element = $compile('<ui-zone></ui-zone>')($rootScope);
-                expect(element.text()).toEqual('Hello World');
-            });
+        var scope;
+
+        beforeEach(inject(function($injector, $compile, $rootScope) {
+            scope = $rootScope.$new();
+
+            $compile('<ui-zone></ui-zone>')(scope);
+            scope.$digest();
+        }));
+
+        it('should have no content', function() {
+            console.log(scope);
+
+            expect(scope.notifications).toBeEmptyArray();
         });
     });
 });
