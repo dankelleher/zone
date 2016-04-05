@@ -2,3 +2,4 @@
 [![Code Climate](https://codeclimate.com/github/dankelleher/zone/badges/gpa.svg)](https://codeclimate.com/github/dankelleher/zone)
 
 Zone - A Notification Zone directive for AngularJS
+
